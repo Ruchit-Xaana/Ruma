@@ -92,6 +92,7 @@ event_enum! {
         "org.matrix.msc3672.beacon" => super::beacon,
         "m.reaction" => super::reaction,
         "m.room.encrypted" => super::room::encrypted,
+        #[ruma_enum(alias = "com.example.custom_event")]
         "m.room.message" => super::room::message,
         "m.room.redaction" => super::room::redaction,
         "m.sticker" => super::sticker,
